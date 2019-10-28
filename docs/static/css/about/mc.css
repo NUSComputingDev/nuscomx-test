@@ -1,5 +1,6 @@
 .banner img {
   object-position: center 80%;
+  max-height: 80vh;
 }
 
 .container-wings .wing {
