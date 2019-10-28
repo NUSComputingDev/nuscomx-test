@@ -2,7 +2,7 @@ extends ../../templates/base.pug
 
 mixin member(name, wing, role)
   .member
-    - const imageName = name.toLowerCase().replace(/ /g,"_")
+    - const imageName = name.toLowerCase().replace(/ /g,"_").replace("/", "_")
     img(src=`${baseUrl}/static/images/about/mc/individual/${imageName}.jpg`, alt="")
     .description
       h1 #{name}
